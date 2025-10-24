@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 p-4 rounded-full flex gap-6 backdrop-blur-lg bg-white/10 shadow-lg"
+    class="fixed top-14 left-1/2 transform -translate-x-1/2 z-50 p-4 rounded-full flex gap-6 backdrop-blur-lg bg-white/10 shadow-lg"
   >
     <button
       v-for="(item, index) in navItems"

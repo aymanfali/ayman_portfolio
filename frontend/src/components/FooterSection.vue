@@ -1,5 +1,6 @@
-<script setup lang="ts">
+<script setup>
 import { Github, Linkedin, MailIcon, PhoneIcon } from 'lucide-vue-next'
+import { Motion } from 'motion-v';
 </script>
 
 <template>

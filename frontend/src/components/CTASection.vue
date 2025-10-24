@@ -1,6 +1,7 @@
 <template>
   <section
-    id="cta" data-section="cta"
+    id="cta"
+    data-section="cta"
     class="min-h-[50vh] flex flex-col justify-center items-center text-center px-8 relative z-10 bg-gradient-to-r from-cyan-900/20 via-blue-900/20 to-cyan-900/20"
   >
     <!-- Motion Header -->
@@ -27,24 +28,29 @@
       :transition="{ delay: 0.2, duration: 0.8 }"
       class="flex flex-col sm:flex-row gap-6 mt-6"
     >
-      <a
-        href="#contact"
+      <button
+        @click="scrollTo('contact')"
         class="px-8 py-4 bg-cyan-500/20 text-cyan-300 border border-cyan-400/40 rounded-full hover:bg-cyan-500/40 hover:text-white transition-all duration-300 shadow-[0_0_15px_rgba(34,211,238,0.5)]"
       >
         Contact Me
-      </a>
-      <a
-        href="#projects"
+      </button>
+      <button
+       @click="scrollTo('projects')"
         class="px-8 py-4 bg-blue-400/20 text-blue-200 border border-blue-300/40 rounded-full hover:bg-blue-400/40 hover:text-white transition-all duration-300 shadow-[0_0_15px_rgba(34,211,238,0.3)]"
       >
         View Projects
-      </a>
+      </button>
     </Motion>
   </section>
 </template>
 
 <script setup>
 import { Motion } from 'motion-v'
+
+function scrollTo(id) {
+  const el = document.querySelector(`[data-section='${id}']`)
+  if (el) el.scrollIntoView({ behavior: 'smooth' })
+}
 </script>
 
 <style scoped>
