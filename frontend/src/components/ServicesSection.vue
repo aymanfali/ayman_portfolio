@@ -40,7 +40,7 @@
 
 <script setup>
 import { Motion } from 'motion-v'
-import { Code, Layout, Cpu } from 'lucide-vue-next'
+import { Code, Link, BugOff, BookOpenCheck, BookCheck } from 'lucide-vue-next'
 
 const services = [
   {
@@ -50,14 +50,25 @@ const services = [
       'Building robust and scalable web apps using modern frameworks like Laravel and Vue.js.',
   },
   {
-    icon: Layout,
-    title: 'UI/UX Design',
-    description: 'Designing clean, user-focused interfaces that balance aesthetics with usability.',
+    icon: Link,
+    title: 'API Development and Integration',
+    description:
+      'Building and integrating RESTful APIs for seamless communication between services.',
   },
   {
-    icon: Cpu,
-    title: 'System Architecture',
-    description: 'Designing software systems following SOLID and clean architecture principles.',
+    icon: BugOff,
+    title: 'Maintenance & Optimization',
+    description: 'Refactoring, debugging, improving security, and maintaining existing systems',
+  },
+  {
+    icon: BookOpenCheck,
+    title: 'Consulting & Technical Mentorship',
+    description: 'Providing expert advice and guidance on software development best practices.',
+  },
+  {
+    icon: BookCheck,
+    title: 'Documentation & Technical Writing',
+    description: 'Creating clear and comprehensive documentation for software projects.',
   },
 ]
 </script>

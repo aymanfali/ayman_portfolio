@@ -41,13 +41,13 @@
 
         <!-- Links -->
         <div class="flex gap-4">
-          <a
+          <!-- <a
             :href="project.link"
             target="_blank"
             class="px-4 py-2 bg-cyan-500/20 text-cyan-300 border border-cyan-400/40 rounded-full hover:bg-cyan-500/40 hover:text-white transition-all duration-300"
           >
             Live Demo
-          </a>
+          </a> -->
           <a
             :href="project.github"
             target="_blank"
@@ -71,27 +71,20 @@ import { Motion } from 'motion-v'
 
 const projects = [
   {
-    title: 'Volunteer Platform',
+    title: 'Conote',
     description:
-      'A system that connects volunteers with opportunities using smart matching algorithms.',
+      'A real-time collaborative note-taking app with live syncing.',
     link: '#',
-    github: '#',
-    image: '/projects/volunteer.jpg',
+    github: 'https://github.com/aymanfali/collaborative_node_editor_frontend',
+    image: '/images/projects/conote.png',
   },
   {
-    title: 'Employee Manager',
+    title: 'Learn Platform',
     description:
-      'A PHP system for managing teams, salaries, and upgrades following SOLID principles.',
+      'An e-learning platform built with Vue.js and Laravel for interactive courses.',
     link: '#',
-    github: '#',
-    image: '/projects/employee.jpg',
-  },
-  {
-    title: 'Portfolio Builder',
-    description: 'A dynamic Vue + Laravel portfolio generator for developers.',
-    link: '#',
-    github: '#',
-    image: '/projects/portfolio.jpg',
+    github: 'https://github.com/aymanfali/learning_management_system',
+    image: '/images/projects/LMS.png',
   },
 ]
 </script>
